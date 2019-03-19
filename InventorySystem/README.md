@@ -1,3 +1,3 @@
 # Netbeans 
-Compile Requirements
-jdk1.8.0_172
+# Compile Requirements
+# jdk1.8.0_172

@@ -1,2 +1,3 @@
-# WGU-Portfolio
-# Degree outline  https://www.wgu.edu/online-it-degrees/software-development-bachelors-program.html
+# Netbeans 
+Compile Requirements
+jdk1.8.0_172

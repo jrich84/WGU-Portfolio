@@ -8,5 +8,5 @@ They have provided you with a mock-up of the user interface to use in the design
 
 ### Requirements
 
-* [Netbeans](#Netbeans)
-* [https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](#jdk1.8.0_172)
+* [Netbeans](https://netbeans.org/)
+* [jdk1.8.0_172](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)

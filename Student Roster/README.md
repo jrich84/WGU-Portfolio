@@ -1,12 +1,10 @@
-## Inventory Managment System
+## Student Roster
 
 Scenario:
 
-You are working for a small manufacturing organization that has outgrown its current inventory system. They have been using a spreadsheet program to manually enter inventory additions, deletions, and other data from a paper-based system but would now like you to develop a more sophisticated inventory program.
-
-They have provided you with a mock-up of the user interface to use in the design and development of the system (see the attached “GUI Mock-Up”) and a class diagram to assist you in your work (see the attached “UML Class Diagram”). The organization also has specific business requirements that must be included as part of the application. A system analyst from your company created the solution statements outlined in the requirements section based on the manufacturing organization’s business requirements. You will use these solution statements to develop your application.
+For this assessment, you will write a program containing two classes named student and roster, respectively. The program will maintain a current roster of students within a given course. Student data for the program includes student ID, first name, last name, e-mail address, age, and array of grades. The program you create will read a list of five students, with one of the students being yourself, and use the series of method calls below (see part B3 below). A well-designed program would use the principles of encapsulation and information hiding. Here is the data that will be used from within the main method of your program:
 
 ### Requirements
 
-* [Netbeans](https://netbeans.org/)
+* [Eclipse](https://www.eclipse.org/ide/)
 * [jdk1.8.0_172](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)

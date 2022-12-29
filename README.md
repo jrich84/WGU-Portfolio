@@ -13,9 +13,9 @@
 
 
 **Engineering**  
-  Software Management Plan
-  RTM
-  User Acceptance Testing
+  Software Management Plan  
+  RTM  
+  User Acceptance Testing  
 
 **Requirements**  
 * MS Word

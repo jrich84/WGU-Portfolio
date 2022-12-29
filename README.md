@@ -4,7 +4,6 @@
 
 **JAVA**  
   Inventory Management System  
-  Student Roster
 
 **Requirements**  
   Eclipse  

@@ -6,5 +6,5 @@
   Inventory Management System  
 
 **Requirements**  
-  Eclipse  
+  Eclipse  "project files are in subfolder"  
   jdk1.8.0_172  

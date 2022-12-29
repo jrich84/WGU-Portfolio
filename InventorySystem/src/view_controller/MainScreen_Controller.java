@@ -164,7 +164,7 @@ public class MainScreen_Controller {
                 modifyPart.setDisable(true);
             // Ensures the productstable is cleared when parts are selected
             if(!(selectedPart == null)){
-                partsTable.getSelectionModel().clearSelection(selectedPart);
+                //partsTable.getSelectionModel().clearSelection(selectedPart);
             }
                 selectedPart =null;
                 // When Table isn't empty it should be selectable

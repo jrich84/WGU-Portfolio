@@ -114,7 +114,7 @@ public abstract class Part {
         return inStock;
     }
     
-   public IntegerProperty minProperty() {
+    public IntegerProperty minProperty() {
         return min;
     }
         

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.vulcanuniversity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@+id/introduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="80dp">
+
+                <TextView
+                    android:id="@+id/greeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GREETINGS and WELCOME"
+                    android:textAlignment="center"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/greeting"
+                    android:text="to \n Vulcans \n Academic Scheduler."
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/start_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message"
+                    android:layout_marginTop="10dp"
+                    android:drawableBottom="@drawable/ic_menu_black_24dp"
+                    android:text="To get started:\n click the icon"
+                    android:textAlignment="center"></TextView>
+
+                <TextView
+                    android:id="@+id/intro_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_hint"
+                    android:text="in top left corner of screen"
+                    android:textAlignment="center"></TextView>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/term_info"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_below="@+id/intro_end"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="@dimen/fab_margin"-->
+<!--                    android:text="Terms Complete"-->
+<!--                    android:textStyle="bold"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/term_progress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_below="@+id/intro_end"-->
+<!--                    android:layout_marginHorizontal="@dimen/fab_margin"-->
+<!--                    android:layout_marginTop="@dimen/fab_margin"-->
+<!--                    android:layout_toEndOf="@+id/term_info"-->
+<!--                    android:text="**"-->
+<!--                    android:textAlignment="center"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/course_info"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_below="@+id/term_info"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginTop="@dimen/fab_margin"-->
+<!--                    android:text="Courses Complete"-->
+<!--                    android:textStyle="bold"></TextView>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/course_progress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_below="@+id/term_info"-->
+<!--                    android:layout_marginHorizontal="@dimen/fab_margin"-->
+<!--                    android:layout_marginTop="@dimen/fab_margin"-->
+<!--                    android:layout_toEndOf="@+id/course_info"-->
+<!--                    android:text="**"-->
+<!--                    android:textAlignment="center"></TextView>-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/draw_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
+
+
+

@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vulcanuniversity.TermActivity">
+<!--    <item-->
+<!--        android:id="@+id/delete_all_terms"-->
+<!--        android:title="Delete all notes"-->
+<!--        app:showAsAction="never" />-->
+</menu>

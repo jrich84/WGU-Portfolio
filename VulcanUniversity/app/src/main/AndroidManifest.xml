@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vulcanuniversity">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--Terms-->
+        <activity
+            android:name=".TermDetailsActivity"
+            android:label="@string/title_activity_term_details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".TermActivity"/>
+        <activity
+            android:name=".TermActivity"
+            android:label="@string/title_activity_term"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--Courses-->
+        <activity
+            android:name=".CourseDetailsActivity"
+            android:label="Edit Course Details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".CourseActivity"/>
+        <activity
+            android:name=".CourseActivity"
+            android:label="Courses"
+            android:launchMode="singleTop"
+            android:parentActivityName=".TermActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--Assessments-->
+        <activity
+            android:name=".AssessmentDetailsActivity"
+            android:label="Assessments Details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".AssessmentActivity"/>
+        <activity
+            android:name=".AssessmentActivity"
+            android:label="Assessments"
+            android:launchMode="singleTop"
+            android:parentActivityName=".CourseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--Notes-->
+        <activity
+            android:name=".NoteDetailsActivity"
+            android:label="Note Details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".NoteActivity"/>
+        <activity
+            android:name=".NoteActivity"
+            android:label="Note"
+            android:launchMode="singleTop"
+            android:parentActivityName=".CourseActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--Mentors-->
+        <activity
+            android:name=".MentorActivity"
+            android:label="Mentors"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".CourseActivity"/>
+        <activity
+            android:name=".MentorDetailsActivity"
+            android:label="Mentor Details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MentorActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".MyBroadcastReceiver"  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

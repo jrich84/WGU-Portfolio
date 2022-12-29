@@ -4,7 +4,7 @@
 
 **JAVA**
 
-Inventory Management System
+Inventory Management System \n
 Student Roster
 
 **Requirements**
